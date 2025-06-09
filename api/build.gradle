@@ -1,0 +1,46 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.retry:spring-retry'
+    
+    // JWT Support (for Java 17)
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+        exceptionFormat = 'full'
+
+        // Display test names in console
+        displayGranularity = 2
+        showExceptions = true
+        showCauses = true
+        showStackTraces = true
+
+        // Show display names instead of method names
+        info.events = ["started", "passed", "skipped", "failed", "standardOut", "standardError"]
+        info.displayGranularity = 2
+    }
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
