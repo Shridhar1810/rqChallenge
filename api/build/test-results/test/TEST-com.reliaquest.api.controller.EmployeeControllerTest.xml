@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Employee Controller Tests" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-06-09T06:57:34" hostname="L1955.local" time="0.064">
+  <properties/>
+  <testcase name="Get All Employees - Should Return All Employees" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.018"/>
+  <testcase name="Get Employees By Name Search - Should Return Matching Employees" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.006"/>
+  <testcase name="Get Employee By ID - Should Return Employee" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.005"/>
+  <testcase name="Create Employee - Should Return Created Employee" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.02"/>
+  <testcase name="Get Highest Salary of Employees - Should Return Highest Salary" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.003"/>
+  <testcase name="Get Top Ten Highest Earning Employee Names - Should Return Employee Names" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.004"/>
+  <testcase name="Delete Employee By ID - Should Return Deleted ID" classname="com.reliaquest.api.controller.EmployeeControllerTest" time="0.004"/>
+  <system-out><![CDATA[2025-06-09 12:27:33.718 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.reliaquest.api.controller.EmployeeControllerTest]: EmployeeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-09 12:27:33.720 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.reliaquest.api.ApiApplication for test class com.reliaquest.api.controller.EmployeeControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.10)
+
+2025-06-09 12:27:33.735 [Test worker] INFO  c.r.a.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 17.0.10 with PID 84254 (started by shridhar in /Users/shridhar/Documents/Repositories/java-employee-challenge/api)
+2025-06-09 12:27:33.735 [Test worker] DEBUG c.r.a.c.EmployeeControllerTest - Running with Spring Boot v3.2.10, Spring v6.1.13
+2025-06-09 12:27:33.735 [Test worker] INFO  c.r.a.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 12:27:33.900 [Test worker] INFO  c.r.api.client.MockEmployeeClient - Initialized Mock Employee Client with base URL: http://localhost:8112/api/v1/employee
+2025-06-09 12:27:34.096 [Test worker] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@643cd1ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19d3cfca, org.springframework.security.web.context.SecurityContextHolderFilter@32870df1, org.springframework.security.web.header.HeaderWriterFilter@13654ccd, org.springframework.security.web.authentication.logout.LogoutFilter@6852b807, com.reliaquest.api.security.AdminKeyAuthFilter@415e5218, com.reliaquest.api.security.JwtAuthenticationFilter@4fb9aa30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e1d9eb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2727ba9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d89908c, org.springframework.security.web.session.SessionManagementFilter@bf9d57e, org.springframework.security.web.access.ExceptionTranslationFilter@512fb332, org.springframework.security.web.access.intercept.AuthorizationFilter@a1c91a]
+2025-06-09 12:27:34.144 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-06-09 12:27:34.144 [Test worker] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-06-09 12:27:34.144 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-06-09 12:27:34.145 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-06-09 12:27:34.148 [Test worker] INFO  c.r.a.c.EmployeeControllerTest - Started EmployeeControllerTest in 0.426 seconds (process running for 4.516)
+2025-06-09 12:27:34.159 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.160 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to get all employees
+2025-06-09 12:27:34.170 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.171 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to search employees by name: Test
+2025-06-09 12:27:34.176 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.177 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to get employee by ID: b104a244-dd05-4d3f-b879-3967fb27a372
+2025-06-09 12:27:34.185 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.196 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to create employee: EmployeeInput(name=New Employee, salary=80000, age=25, title=QA Engineer)
+2025-06-09 12:27:34.202 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.202 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to get highest salary
+2025-06-09 12:27:34.206 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.206 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to get top 10 highest earning employee names
+2025-06-09 12:27:34.211 [Test worker] DEBUG c.r.a.s.JwtAuthenticationFilter - JWT Token does not begin with Bearer String
+2025-06-09 12:27:34.212 [Test worker] INFO  c.r.a.controller.EmployeeController - Request received to delete employee with ID: c3f1660f-48d1-4df9-a878-37cf0fb7c5a4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

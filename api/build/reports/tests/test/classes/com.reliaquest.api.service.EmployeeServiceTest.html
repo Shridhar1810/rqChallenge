@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Employee Service Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Employee Service Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.reliaquest.api.service.html">com.reliaquest.api.service</a> &gt; EmployeeServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.031s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Create Employee - Should Create and Return New Employee</td>
+<td class="success">createEmployee_ShouldCreateAndReturnNewEmployee()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Delete Employee By ID - When Employee Does Not Exist - Should Throw Exception</td>
+<td class="success">deleteEmployeeById_WhenEmployeeDoesNotExist_ShouldThrowException()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Delete Employee By ID - When Successful - Should Return Deleted ID</td>
+<td class="success">deleteEmployeeById_WhenSuccessful_ShouldReturnDeletedId()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get All Employees - Should Return All Employees</td>
+<td class="success">getAllEmployees_ShouldReturnAllEmployees()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get Employee By ID - When Employee Does Not Exist - Should Throw Exception</td>
+<td class="success">getEmployeeById_WhenEmployeeDoesNotExist_ShouldThrowException()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get Employee By ID - When Employee Exists - Should Return Employee</td>
+<td class="success">getEmployeeById_WhenEmployeeExists_ShouldReturnEmployee()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get Employees By Name Search - Should Filter By Name</td>
+<td class="success">getEmployeesByNameSearch_ShouldFilterByName()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get Highest Salary of Employees - Should Return Highest Salary</td>
+<td class="success">getHighestSalaryOfEmployees_ShouldReturnHighestSalary()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get Top Ten Highest Earning Employee Names - Should Return Sorted Names</td>
+<td class="success">getTopTenHighestEarningEmployeeNames_ShouldReturnSortedNames()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-06-09 12:27:34.532 [Test worker] INFO  c.r.api.service.EmployeeService - Deleting employee with ID: 862ffa8d-6b0f-4b9e-bede-acf4a67bdeb9
+2025-06-09 12:27:34.532 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving employee with ID: 862ffa8d-6b0f-4b9e-bede-acf4a67bdeb9
+2025-06-09 12:27:34.532 [Test worker] ERROR c.r.api.service.EmployeeService - Employee not found with ID: 862ffa8d-6b0f-4b9e-bede-acf4a67bdeb9
+2025-06-09 12:27:34.534 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving employee with ID: e06fdae0-0870-4c2c-bef4-29267a2bd279
+2025-06-09 12:27:34.534 [Test worker] ERROR c.r.api.service.EmployeeService - Employee not found with ID: e06fdae0-0870-4c2c-bef4-29267a2bd279
+2025-06-09 12:27:34.535 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving all employees
+2025-06-09 12:27:34.536 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving highest salary of employees
+2025-06-09 12:27:34.536 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving all employees
+2025-06-09 12:27:34.537 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving top 10 highest earning employee names
+2025-06-09 12:27:34.538 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving all employees
+2025-06-09 12:27:34.539 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving employee with ID: 51da61d3-8d85-4fea-a610-aa22a91ead0a
+2025-06-09 12:27:34.540 [Test worker] INFO  c.r.api.service.EmployeeService - Searching employees with name containing: 1
+2025-06-09 12:27:34.540 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving all employees
+2025-06-09 12:27:34.542 [Test worker] INFO  c.r.api.service.EmployeeService - Deleting employee with ID: 00f75660-dae4-45b8-af0b-b086a7ff2fd7
+2025-06-09 12:27:34.542 [Test worker] INFO  c.r.api.service.EmployeeService - Retrieving employee with ID: 00f75660-dae4-45b8-af0b-b086a7ff2fd7
+2025-06-09 12:27:34.542 [Test worker] INFO  c.r.api.service.EmployeeService - Successfully deleted employee with ID: 00f75660-dae4-45b8-af0b-b086a7ff2fd7
+2025-06-09 12:27:34.543 [Test worker] INFO  c.r.api.service.EmployeeService - Creating new employee: EmployeeInput(name=New Employee, salary=80000, age=28, title=Frontend Developer)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.4</a> at 09-Jun-2025, 12:27:35 pm</p>
+</div>
+</div>
+</body>
+</html>
